@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel booking</title>
+</head>
+<body>
+
+    <header class="header">
+        <a  id="logo" routerLink="./home"><img  src="./assets/image/mylogo.png" alt=""></a>
+        <nav class="navbar">
+            <a routerLink="./home">home</a>
+            <a href="#">bookings</a>
+            <a href="#">gallery</a>
+            <a href="#">about</a>
+            <a href="#">blog</a>
+            <a routerLink="../signup">Account</a>
+        </nav>
+        <!-- <div class="icons">
+            
+            <div class="fas fa-user" id="myuser"></div>
+            <div class="fas fa-search" id="serach-bar"></div>
+            <div class="fas fa-bars" id="menu-bars"></div>
+        </div> -->
+
+        <!-- <div class="search-box">
+            <input type="search" placeholder="search here">
+        </div> -->
+        
+    </header>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+    <router-outlet></router-outlet>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer_col">
+          <h1>EXPLORE</h1>
+          <P>With hundreds of practices serviced in NJ NY Region we strive to provide excellent patient
+            <br>care in the clinical laboratory industry. Let us be your choice.</P>
+         <P>Please check our Policies:</P>
+         <ul>
+           <li>
+             <a href="">Our Story</a>
+           </li>
+           <li>
+             <a href="">Responsible Luxury</a>
+           </li>
+           <li>
+             <a href="">Hotels & Resorts</a>
+           </li>
+           <li>
+             <a href="">Offers & Experiences</a>
+           </li>
+           <li>
+             <a href="">New & Upcoming Hotels</a>
+           </li>
+         </ul>
+        </div>
+        <div class="footer_col">
+          <h1>TOP DESTINATIONS</h1>
+          <ul>
+            <li>
+              <a href="">New Delhi Hotels</a>
+            </li>
+            <li>
+              <a href="">Mumbai Hotels</a>
+            </li>
+            <li>
+              <a href="">Chennai Hotels</a>
+            </li>
+            <li>
+              <a href="">Kolkata Hotels</a>
+            </li>
+            <li>
+              <a href="">Kerala Hotels</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_col">
+          <h1>DISCOVER</h1>
+          <ul>
+            <li>
+              <a href="">WelcomZest Epicurean</a>
+            </li>
+            <li>
+              <a href="">SLEEEP Boutique</a>
+            </li>
+            <li>
+              <a href="">ITC's Hotel Group GDS Codes</a>
+            </li>
+            <li>
+              <a href="">ICD10 Coding</a>
+            </li>
+            <li>
+              <a href="">ACP Clinical Guidelines</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_col">
+          <h1>QUICK LINKS</h1>
+          <ul>
+            <li>
+              <a href=""><mat-icon> location_on</mat-icon>Ayyanar Kovil Road, Venganallur, Virudhunagar District, Rajapalayam, Tamil Nadu 626117 </a>
+            </li>
+            <li>
+              <a href=""><mat-icon>perm_phone_msg</mat-icon>7448909216,9043431692,.......</a>
+            </li>
+            <!-- <li>
+              <a href=""><mat-icon>child_care</mat-icon>CareEvolve</a>
+            </li> -->
+            <li>
+              <a href=""><mat-icon> message</mat-icon>Online bill Payment </a>
+            </li>
+            <li>
+              <a href=""><mat-icon>warning</mat-icon> Covid Protection</a>
+            </li>
+          </ul>
+  
+        </div>
+        <div class="footer_col">
+          <h1>CONNECT WITH US</h1>      
+          <a href=""><i class="fab fa-facebook-f "></i></a>
+  
+  <!-- Twitter -->
+  <a href=""><i class="fab fa-twitter fa-xl"></i></a>
+  
+  <!-- Google -->
+  <a href=""><i class="fab fa-google fa-xl"></i></a>
+  
+  <!-- Instagram -->
+  <a href=""><i class="fab fa-instagram fa-xl"></i></a>
+  
+  <!-- Linkedin -->
+  <a href=""><i class="fab fa-linkedin-in fa-xl"></i></a>
+  
+  <!-- Pinterest -->
+  <a href=""><i class="fab fa-pinterest fa-xl"></i></a>
+  
+  <!-- Vkontakte -->
+  <a href=""><i class="fab fa-vk icon-large fa-xl"></i></a>
+  
+        </div>
+        
+      </div>
+      <hr>
+        <span>© 2000 -
+          2022 TEAM-3 HOTEL LOCATOR. All Rights Reserved.</span>
+    </div>
+  </footer>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+    <script >
+      let search = document.querySelector('#serach-bar');
+let searchbox = document.querySelector('.search-box');
+let menubar = document.querySelector('#menu-bars');
+let mynav = document.querySelector('.navbar');
+
+
+
+
+search.onclick = () =>{
+    searchbox.classList.toggle('active');
+}
+
+menubar.onclick = () =>{
+    menubar.classList.toggle('fa-times')
+    mynav.classList.toggle('active')
+}
+    </script>
+</body>
+
+
+</html>

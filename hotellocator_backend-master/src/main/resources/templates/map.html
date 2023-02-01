@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet.js Guide</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=
+            "https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin="" />
+</head>
+<body>
+<div id="map" style="width: 960px; height: 500px"></div>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+<script>
+    const map = L.map('map')
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    map.setView([10.2381,77.4892], 16);
+    let eiffelMarker = L.marker([10.24258,77.4885068]).addTo(map);
+    eiffelMarker.bindPopup("HFL International").openPopup();
+    let eiffelMarker1 = L.marker([10.2424797,77.4880994999999]).addTo(map);
+    eiffelMarker1.bindPopup("Minack Villa").openPopup();
+    let eiffelMarker2 = L.marker([10.2391863,77.48592]).addTo(map);
+    eiffelMarker2.bindPopup("Lumino Skypark").openPopup();
+    let eiffelMarker3 = L.marker([10.2355985,77.4929533]).addTo(map);
+    eiffelMarker3.bindPopup("Hotel Jc Grand").openPopup();
+    let eiffelMarker4 = L.marker([10.2349329,77.4909416]).addTo(map)
+    eiffelMarker4.bindPopup("Hotel Raindrops").openPopup();
+    let eiffelMarker5 = L.marker([10.2365494,77.4911042]).addTo(map);
+    eiffelMarker5.bindPopup("Hotel Seven Roads").openPopup();
+    let eiffelMarker6 = L.marker([33.699631,-117.9177051]).addTo(map);
+    eiffelMarker6.bindPopup("Bruton resorts").openPopup();
+    let eiffelMarker7 = L.marker([10.2405383,77.4876336]).addTo(map);
+    eiffelMarker7.bindPopup("FabHotel Eden Garden").openPopup();
+    let eiffelMarker9 = L.marker([10.2365494,77.4911042]).addTo(map);
+    eiffelMarker9.bindPopup("Treebo Trend Kodai Kings Park").openPopup();
+    let eiffelMarker0 = L.marker([10.2381136,77.4891822]).addTo(map);
+    eiffelMarker0.bindPopup("Adhiti Farm Stay").openPopup();
+</script>
+</body>
+</html>
+
+

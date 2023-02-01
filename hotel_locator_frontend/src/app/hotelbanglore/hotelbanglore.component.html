@@ -1,0 +1,12 @@
+<html>
+<body>
+<div *ngFor="let row of bangloreresults">
+  <div *ngFor="let cell of row">
+    {{cell}}
+  </div>
+</div>
+<a [routerLink]="['/mapbanglore']">Show on map</a>
+<router-outlet></router-outlet>
+</body>
+</html>
+

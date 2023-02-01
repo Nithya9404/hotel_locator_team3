@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet.js Guide</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=
+            "https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin="" />
+</head>
+<body>
+<div id="map" style="width: 960px; height: 500px"></div>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+<script>
+    const map = L.map('map')
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    map.setView([19.0760,72.8777], 16);
+    let eiffelMarker = L.marker([18.9658045,72.8177497]).addTo(map);
+    eiffelMarker.bindPopup("Hotel Minerva Residency - Near Grant Road Railway Station Mumbai").openPopup();
+    let eiffelMarker1 = L.marker([18.9617639,72.8297838]).addTo(map);
+    eiffelMarker1.bindPopup("Hotel Indore Palace").openPopup();
+    let eiffelMarker2 = L.marker([18.9693888,72.8190798999999]).addTo(map);
+    eiffelMarker2.bindPopup("Hotel Amber Palace Mumbai Central").openPopup();
+    let eiffelMarker3 = L.marker([18.9579698,72.8169760999999]).addTo(map);
+    eiffelMarker3.bindPopup("RK Hotel-Near Grant Road Railway Station").openPopup();
+    let eiffelMarker4 = L.marker([18.9620309,72.8212264]).addTo(map)
+    eiffelMarker4.bindPopup("Adiva Residency Beacon, Grant Road, Mumbai").openPopup();
+    let eiffelMarker5 = L.marker([18.962498,72.814104]).addTo(map);
+    eiffelMarker5.bindPopup("Krishna Palace Hotel").openPopup();
+    let eiffelMarker6 = L.marker([18.9620309,72.8212264]).addTo(map);
+    eiffelMarker6.bindPopup("Hotel Balwas").openPopup();
+    let eiffelMarker7 = L.marker([18.9687193,72.8236913]).addTo(map);
+    eiffelMarker7.bindPopup("The Sahil Hotel").openPopup();
+    let eiffelMarker9 = L.marker([18.9619253,72.8235543]).addTo(map);
+    eiffelMarker9.bindPopup("Hotel Briteway").openPopup();
+    let eiffelMarker11 = L.marker([18.9710742,72.8237504]).addTo(map);
+    eiffelMarker11.bindPopup("Royal Guest House by WB Inn").openPopup();
+    let eiffelMarker12 = L.marker([18.9586365,72.8175572]).addTo(map);
+    eiffelMarker12.bindPopup("Hotel Tourister").openPopup();
+    let eiffelMarker13 = L.marker([18.9682443,72.8238592]).addTo(map);
+    eiffelMarker13.bindPopup("Hotel Balwas International").openPopup();
+    let eiffelMarker14 = L.marker([18.9633695,72.8211178]).addTo(map);
+    eiffelMarker14.bindPopup("Hotel Kalpana Palace, Mumbai").openPopup();
+    let eiffelMarker15 = L.marker([18.961787,72.8220307]).addTo(map);
+    eiffelMarker15.bindPopup("Hotel Ashyana").openPopup();
+    let eiffelMarker16 = L.marker([18.9615546,72.8194951]).addTo(map);
+    eiffelMarker16.bindPopup("Itsy By Treebo - Heera International").openPopup();
+    let eiffelMarker17 = L.marker([18.9613183,72.8175979]).addTo(map);
+    eiffelMarker17.bindPopup("Empire Hotel - Grant Road").openPopup();
+    let eiffelMarker18 = L.marker([18.9719768,72.8234501]).addTo(map);
+    eiffelMarker18.bindPopup("YMCA International House").openPopup();
+    let eiffelMarker19 = L.marker([18.9635359,72.8102311]).addTo(map);
+    eiffelMarker19.bindPopup("Hotel Royal Castle").openPopup();
+    let eiffelMarker20 = L.marker([18.9615368,72.8175582]).addTo(map);
+    eiffelMarker20.bindPopup("Hotel Kumkum").openPopup();
+
+
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Hotels in Kodaikanal</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+  <table>
+    <thead>
+    <tr>
+      <th> Name</th>
+      <th> Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each = "HotelKodaikanal : ${kodaikanal}">
+      <td th:text = "${HotelKodaikanal.name}"></td>
+      <td th:text = "${HotelKodaikanal.address}"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+  <a th:href="@{http://localhost:8080/map}">Show on map</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hotels in Chennai</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th> Name</th>
+            <th> Address</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each = "HotelChennai : ${chennai}">
+            <td th:text = "${HotelChennai.name}"></td>
+            <td th:text = "${HotelChennai.address}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <a th:href="@{http://localhost:8080/mapchennai}">Show on map</a>
+</div>
+</body>
+</html>

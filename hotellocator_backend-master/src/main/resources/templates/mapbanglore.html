@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet.js Guide</title>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=
+          "https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+</head>
+<body>
+<div id="map" style="width: 960px; height: 500px"></div>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+<script>
+  const map = L.map('map')
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+  map.setView([12.9716,77.5946], 16);
+  let eiffelMarker = L.marker([12.9725434,77.59996]).addTo(map);
+  eiffelMarker.bindPopup("Omatra Infantry Road").openPopup();
+  let eiffelMarker1 = L.marker([12.9796053,77.6037684]).addTo(map);
+  eiffelMarker1.bindPopup("Melange Luxury Serviced Apartments").openPopup();
+  let eiffelMarker2 = L.marker([12.9710529,77.597139]).addTo(map);
+  eiffelMarker2.bindPopup("Vivanta Bengaluru Residency Road").openPopup();
+  let eiffelMarker3 = L.marker([12.9715579,77.6061223999999]).addTo(map);
+  eiffelMarker3.bindPopup("Octave Kings Suites").openPopup();
+  let eiffelMarker4 = L.marker([12.9705894,77.6041179]).addTo(map)
+  eiffelMarker4.bindPopup("Monarch Brigade Road").openPopup();
+  let eiffelMarker5 = L.marker([12.972852,77.6075]).addTo(map);
+  eiffelMarker5.bindPopup("Monarch Luxur - Infantry Road").openPopup();
+  let eiffelMarker6 = L.marker([12.9803,77.605012]).addTo(map);
+  eiffelMarker6.bindPopup("Nahar Heritage Hotel").openPopup();
+  let eiffelMarker7 = L.marker([12.9710454,77.6007245]).addTo(map);
+  eiffelMarker7.bindPopup("FabHotel Phoenix Resorts").openPopup();
+  let eiffelMarker9 = L.marker([12.9815133,77.6041802]).addTo(map);
+  eiffelMarker9.bindPopup("Zone By The Park Infantry Bengaluru\"").openPopup();
+  let eiffelMarker11 = L.marker([12.980724,77.604738]).addTo(map);
+  eiffelMarker11.bindPopup("Ivory Tower").openPopup();
+  let eiffelMarker12 = L.marker([12.9755981,77.6052364999999]).addTo(map);
+  eiffelMarker12.bindPopup("Locul.Central").openPopup();
+  let eiffelMarker13 = L.marker([12.9748195,77.6067975]).addTo(map);
+  eiffelMarker13.bindPopup("Iris Hotel & Spa").openPopup();
+  let eiffelMarker14 = L.marker([12.9659438,77.6057368]).addTo(map);
+  eiffelMarker14.bindPopup("Hotel Richmond Residency").openPopup();
+  let eiffelMarker15 = L.marker([12.9671979,77.6061979]).addTo(map);
+  eiffelMarker15.bindPopup("Hotel Vellara").openPopup();
+  let eiffelMarker16 = L.marker([12.9675267,77.6077947]).addTo(map);
+  eiffelMarker16.bindPopup("FabHotel DP's Crown").openPopup();
+  let eiffelMarker17 = L.marker([12.9810824,77.6114456999999]).addTo(map);
+  eiffelMarker17.bindPopup("Taura Comfort").openPopup();
+  let eiffelMarker18 = L.marker([12.9674414,77.6080958]).addTo(map);
+  eiffelMarker18.bindPopup("FAMILY FRIENDLY STUDIO APARTMENT").openPopup();
+  let eiffelMarker19 = L.marker([12.9696357,77.6066115]).addTo(map);
+  eiffelMarker19.bindPopup("apital Residency").openPopup();
+  let eiffelMarker20 = L.marker([12.9828414,77.5962715]).addTo(map);
+  eiffelMarker20.bindPopup("Mastiff Infantry Bengaluru").openPopup();
+
+
+</script>
+</body>
+</html>
+
+
