@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url('assets/image/hotelbg.jpeg');
+}
+
+.cell {
+  padding: 10px;
+  margin: 10px;
+  background-color: mediumturquoise;
+  border: 3px solid #bf3b31;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
+a {
+  font-size: 18px;
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+

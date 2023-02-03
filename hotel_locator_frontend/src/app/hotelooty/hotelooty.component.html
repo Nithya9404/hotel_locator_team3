@@ -1,5 +1,9 @@
-<div *ngFor="let row of ootyresults">
+<div class="root">
+<div class="cell" *ngFor="let row of ootyresults">
   <div *ngFor="let cell of row">
     {{cell}}
   </div>
 </div>
+</div>
+<a [routerLink]="['/mapooty']">Show on map</a>
+

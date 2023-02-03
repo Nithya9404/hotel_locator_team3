@@ -17,11 +17,12 @@ import { HotelmumbaiComponent } from './hotelmumbai/hotelmumbai.component';
 import { HotelootyComponent } from './hotelooty/hotelooty.component';
 import { HotelkodaikanalComponent } from './hotelkodaikanal/hotelkodaikanal.component';
 import {RouterModule} from "@angular/router";
-import { MapbangloreComponent } from './mapbanglore/mapbanglore.component';
+import {MapbangloreComponent} from "./mapbanglore/mapbanglore.component";
 import { MapchennaiComponent } from './mapchennai/mapchennai.component';
 import { MapkodaikanalComponent } from './mapkodaikanal/mapkodaikanal.component';
 import { MapmumbaiComponent } from './mapmumbai/mapmumbai.component';
 import { MapootyComponent } from './mapooty/mapooty.component';
+import { LeafletModule} from "@asymmetrik/ngx-leaflet";
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { MapootyComponent } from './mapooty/mapooty.component';
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule, MatIconModule, FormsModule,
-       HttpClientModule,CommonModule,RouterModule
+       HttpClientModule,CommonModule,RouterModule,
+      LeafletModule
     ],
   providers: [],
   bootstrap: [AppComponent]
