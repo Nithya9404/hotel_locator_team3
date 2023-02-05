@@ -1,7 +1,8 @@
-<div *ngFor = "let row of chennairesults">
+<div class="root">
+<div class="cell" *ngFor = "let row of chennairesults">
   <div *ngFor = "let cell of row">
     {{cell}}
   </div>
-
+</div>
 </div>
 <a [routerLink]="['/mapchennai']">Show on map</a>
