@@ -1,6 +1,9 @@
-<div *ngFor="let row of mumbairesults">
+<div class="root">
+<div class="cell" *ngFor="let row of mumbairesults">
   <div *ngFor="let cell of row">
     {{cell}}
   </div>
 </div>
+</div>
 <a [routerLink]="['/mapmumbai']">Show on map</a>
+
