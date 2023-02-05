@@ -2,7 +2,7 @@
 <div class="main-text">
   <h2>perfection</h2>
   <h1>and you are <span>invited</span></h1>
-  <form (ngSubmit)="searchHotel(searchTerm)">
+  <form class ="search" (ngSubmit)="searchHotel(searchTerm)">
     <input type="text" [(ngModel)]="searchTerm" name = "searchTerm" placeholder="Search Location...">
     <button><img src="../assets/image/search.png"></button>
   </form>
