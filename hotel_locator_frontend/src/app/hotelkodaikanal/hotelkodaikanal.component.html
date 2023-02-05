@@ -1,6 +1,9 @@
-<div *ngFor="let row of kodaikanalresults">
+<div class="root">
+<div class="cell" *ngFor="let row of kodaikanalresults">
   <div *ngFor="let cell of row">
     {{cell}}
   </div>
 </div>
+</div>
 <a [routerLink]="['/mapkodaikanal']">Show on map</a>
+
