@@ -1,28 +1,65 @@
 .root {
   display: flex;
   flex-wrap: wrap;
-  background-image: url('assets/image/hotelbg.jpeg');
+  background: url("ootybg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s;
 }
 
 .cell {
   padding: 10px;
   margin: 10px;
-  background-color: mediumturquoise;
-  border: 3px solid #bf3b31;
+  background-color: #fff;
+  border: 1px solid #333;
   font-size: 20px;
-  border-radius: 25px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-a {
-  font-size: 18px;
-  color: blue;
-  text-decoration: none;
+.cell:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
 }
+
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
 
 a:hover {
   color: red;
   text-decoration: underline;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .root {
+    flex-direction: column;
+  }
+}
+
+
+
+
 
 
 
