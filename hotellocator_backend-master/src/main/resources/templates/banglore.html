@@ -6,12 +6,6 @@
 <body>
 <div>
     <table>
-        <thead>
-        <tr>
-            <th> Name</th>
-            <th> Address</th>
-        </tr>
-        </thead>
         <tbody>
         <tr th:each = "HotelBanglore : ${banglore}">
             <td th:text = "${HotelBanglore.name}"></td>
